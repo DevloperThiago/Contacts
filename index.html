@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Contact - Thiago Matos</title>
+</head>
+<body>
+
+
+    <header>
+        <nav class="nav-bar">
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="https://devloperthiago.github.io/MainPage/" class="nav-link nav-link1">Main</a></li>
+                    <li class="nav-item"><a href="https://devloperthiago.github.io/Projects/" class="nav-link nav-link2">Projects</a></li>
+                    <li class="nav-item"><a href="https://devloperthiago.github.io/Contacts/" class="nav-link nav-link3">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/menu_white_36dp.png" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="https://devloperthiago.github.io/MainPage/" class="nav-link">Main</a></li>
+                <li class="nav-item"><a href="https://devloperthiago.github.io/Projects/" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="https://devloperthiago.github.io/Contacts/" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+        <div class="main-content">
+            <h1 class="main-text" id="main-title">My contacts:</h1>
+
+            <table>
+                <ul class="linkedin">
+                    <img class="linkedin-img" src="assets/LinkedIn.png" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/thiago-strechar-de-matos/" target="_blank" class="linkedin-a" id="linkedin">Access my LinkedIn</a>
+                </ul>
+
+                <ul class="email">
+                    <img class="email-img" src="assets/Email.png" alt="Email"><a class="email-a" href="mailto:thiagom4tos2005@gmail.com" target="_blank">Email: thiagom4tos2005@gmail.com</a>
+                </ul>
+
+                <ul class="instagram">
+                    <img class="instagram-img" src="assets/Instagram.png" alt="Instagram"><a href="https://www.instagram.com/thiago.m4tos/" target="_blank" class="instagram-a" id="instagram"> My Instagram: thiago.m4tos</a>
+                </ul>
+
+                <ul class="github">
+                    <img class="github-img" src="assets/GitHub.png" alt="GitHub"><a href="https://github.com/DevloperThiago" target="_blank" class="github-a" id="github"> Check out my projects on GitHub</a>
+                </ul>
+            </table>
+
+        </div>
+
+        <select class="language" onchange="changeLanguage()">
+            <option value="english" id="option-text1">English</option>
+            <option value="portuguese" id="option-text2">Portuguese</option>
+        </select>
+
+</body>
+</html>
