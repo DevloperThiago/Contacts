@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(1, 32, 116);
+    background-color: rgb(1, 27, 62);
 }
 
 .nav-bar {
@@ -26,6 +26,10 @@ body {
     display: flex;
     justify-content: center;
     list-style: none;
+}
+
+.nav-list span {
+    color: rgb(0, 255, 21);
 }
 
 .nav-item {
@@ -66,13 +70,13 @@ body {
     width: 50%;
     height: 300px;
     margin: 70px auto;
-    border-left: solid 5px rgb(0, 255, 85);
+    border-left: solid 5px rgb(0, 255, 21);
     padding: 30px;
 }
 
 .main-text {
     text-align: center;
-    color: rgb(200, 200, 200);
+    color: rgb(222, 222, 222);
 }
 
 .linkedin {
@@ -104,7 +108,7 @@ body {
     display: block;
     height: 4px;
     width: 100%;
-    background-color: rgb(0, 255, 85);
+    background-color: rgb(0, 255, 21);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .5s ease;
@@ -145,7 +149,7 @@ body {
     display: block;
     height: 4px;
     width: 100%;
-    background-color: rgb(0, 255, 85);
+    background-color: rgb(0, 255, 21);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .5s ease;
@@ -188,7 +192,7 @@ body {
     display: block;
     height: 4px;
     width: 100%;
-    background-color: rgb(0, 255, 85);
+    background-color: rgb(0, 255, 21);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .5s ease;
@@ -231,7 +235,7 @@ body {
     display: block;
     height: 4px;
     width: 100%;
-    background-color: rgb(0, 255, 85);
+    background-color: rgb(0, 255, 21);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform .5s ease;
@@ -246,32 +250,24 @@ body {
 }
 
 select {
+    position: fixed;
     appearance: none;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999999;
     padding: 10px;
-    margin-top: 20px;
     border-width: 1px;
-    color: rgb(0, 255, 85);
-    font-size: 16px;
-    margin-left: 87%;
+    color: rgb(0, 255, 21);
     border-radius: 5px;
     background: none;
-    border-color: rgb(0, 255, 85);
+    border-color: rgb(0, 255, 21);
 }
 
 select > option {
     background-color: rgb(0, 14, 54);
-    border-color: rgb(0, 255, 85);
-    font-size: 16px;
+    border-color: rgb(0, 255, 21);
     color: rgb(255, 255, 255);
-    border-color: rgb(0, 255, 85);
-}
-
-@media screen and (max-width: 1000px) {
-
-    select {
-        margin-left: 85%;
-    }
-
+    border-color: rgb(0, 255, 21);
 }
 
 @media screen and (max-width: 900px) {
@@ -292,12 +288,6 @@ select > option {
 }
 
 @media screen and (max-width: 770px) {
-
-    select {
-        margin-left: 80%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
 
     .nav-bar {
         width: 80%;
@@ -329,6 +319,10 @@ select > option {
         padding-bottom: 1rem;
     }
 
+    .mobile-menu span {
+        color: rgb(0, 255, 21);
+    }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
@@ -337,14 +331,6 @@ select > option {
     .open {
         display: block;
     }
-}
-
-@media screen and (max-width: 630px) {
-
-    select {
-        margin-left: 78%;
-    }
-
 }
 
 @media screen and (max-width: 552px) {
@@ -388,10 +374,9 @@ select > option {
         font-size: 10px;
     }
 
-    select {
-        margin-left: 70%;
+    .main-content {
+        margin-bottom: 100px;
     }
-
 }
 
 @media screen and (max-width: 300px) {
@@ -411,9 +396,4 @@ select > option {
     .linkedin-a, .email-a, .instagram-a, .github-a {
         font-size: 12px;
     }
-
-    select {
-        margin-left: 63%;
-    }
-
 }
