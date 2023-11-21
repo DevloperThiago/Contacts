@@ -2,9 +2,15 @@ const language = document.querySelector('.language')
 
 function changeLanguage() {
     const langSelect = document.querySelector('.language')
-    const navLink1 = document.querySelector('.nav-link1')
-    const navLink2 = document.querySelector('.nav-link2')
-    const navLink3 = document.querySelector('.nav-link3')
+
+    const mainLink = document.querySelector('#main-link')
+    const projectsLink = document.querySelector('#projects-link')
+    const contactsLink = document.querySelector('#contacts-link')
+
+    const mobileMainLink = document.querySelector('#mobile-main-link')
+    const mobileProjectsLink = document.querySelector('#mobile-projects-link')
+    const mobileContactsLink = document.querySelector('#mobile-contacts-link')
+    
     const title = document.querySelector('#main-title')
     const linkedin = document.querySelector('#linkedin')
     const instagram = document.querySelector('#instagram')
@@ -13,9 +19,14 @@ function changeLanguage() {
     const option2 = document.querySelector('#option-text2')
 
     if(langSelect.value === 'english') {
-        navLink1.innerHTML = `Main`
-        navLink2.innerHTML = `Projects`
-        navLink3.innerHTML = `Contact`
+        mainLink.innerHTML = `<span>#1.</span> Main`
+        projectsLink.innerHTML = `<span>#2.</span> Projects`
+        contactsLink.innerHTML = `<span>#3.</span> Contact`
+
+        mobileMainLink.innerHTML = `<span>#1.</span> Main`
+        mobileProjectsLink.innerHTML = `<span>#2.</span> Projects`
+        mobileContactsLink.innerHTML = `<span>#3.</span> Contact`
+        
         title.innerHTML = `My contacts:`
         linkedin.innerHTML = `Access my LinkedIn`
         instagram.innerHTML = `My Instagram: thiago.m4tos`
@@ -24,11 +35,15 @@ function changeLanguage() {
         option2.innerHTML = `Portuguese`
     }
 
-
     if(langSelect.value === 'portuguese') {
-        navLink1.innerHTML = `Menu`
-        navLink2.innerHTML = `Projetos`
-        navLink3.innerHTML = `Contato`
+        mainLink.innerHTML = `<span>#1.</span> Menu`
+        projectsLink.innerHTML = `<span>#2.</span> Projetos`
+        contactsLink.innerHTML = `<span>#3.</span> Contato`
+
+        mobileMainLink.innerHTML = `<span>#1.</span> Menu`
+        mobileProjectsLink.innerHTML = `<span>#2.</span> Projetos`
+        mobileContactsLink.innerHTML = `<span>#3.</span> Contato`
+        
         title.innerHTML = `Meus contatos:`
         linkedin.innerHTML = `Acessar meu LinkedIn`
         instagram.innerHTML = `Meu Instagram: thiago.m4tos`
@@ -51,4 +66,4 @@ function menuShow() {
 }
 
 
-language.addEventListener('change', changeLanguage())
+language.addEventListener('change', changeLanguage)
